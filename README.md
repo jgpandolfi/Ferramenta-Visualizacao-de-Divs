@@ -4,7 +4,8 @@
 Ferramenta desenvolvida como forma de estudo próprio. Além de exercitar o conhecimento sobre os diferentes modos de display e como eles fucnionam sobre as divs, a ferramenta também fucniona como um excelente material prático de consulta o qual recorro frequentemente durante a realização de outros projetos.
 </p>
 
-<br>
+## 🌎 Acesse o projeto funcionando na web
+<a href="https://visualizacaodivs.agenciam2a.com.br/" target="_blank">https://visualizacaodivs.agenciam2a.com.br/</a>
 
 ## 🚀 Tecnologias
 
