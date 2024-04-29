@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferramenta de alteração e visualização de tipos de Display em Divs desenvolvida para estudo próprio.">
+    <meta name="keywords" content="display,displays,display flex,display block,display inline, display flexbox,display div,div">
+    <meta name="author" content="Jota / José Guilherme Pandolfi">
+    <meta name="robots" content="index, follow">
+    <title>Ferramenta de Visualização de Displays em Divs</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href=".\assets\favicon.ico" type="image/x-icon">
+
+    <!-- Carregar a fonte Lato do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Metatags de Localização -->
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Taquaritinga">
+    <meta name="geo.position" content="-21.4052612;-48.5101113">
+    <meta name="ICBM" content="-21.4052612, -48.5101113">
+
+    <!-- Metatags de Redes Sociais -->
+    <meta property="og:title" content="Ferramenta de Visualização de Displays em Divs">
+    <meta property="og:description" content="Ferramenta de alteração e visualização de tipos de Display em Divs desenvolvida para estudo próprio.">
+    <meta property="og:url" content="https://www.agenciam2a.com.br">
+    <meta property="og:image" content="https://www.agenciam2a.com.br/assets/logoFundoBranco.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+</head>
+<body>
+    <div>
+        <!-- Header -->
+        <header>
+            <h1>Ferramenta de Visualização de Displays em Div</h1>
+            <h2>Ferramenta desenvolvida como forma de estudo próprio. Além de exercitar o conhecimento sobre os diferentes modos de display e como eles fucnionam sobre as divs, a ferramenta também fucniona como um excelente material prático de consulta o qual recorro frequentemente durante a realização de outros projetos.</h2>
+        </header>
+
+        <!-- Main  -->
+        <main>
+            <section>
+                <p>Div Container:</p>
+                <div id="divContainer">
+                    <div class="divInner">Div Interna</div>
+                    <div class="divInner">Div Interna</div>
+                    <div class="divInner">Div Interna</div>
+                    <div class="divInner">Div Interna</div>
+                </div>
+            </section>
+            <section>
+                <p>Controles para configuração dos modos de display:</p>
+                <div>
+                    <fieldset class="fs">
+                        <legend>Div Container</legend>
+
+                        <input type="radio" id="op1c" name="opContainer" value="inline">
+                        <label for="op1c">Inline</label>
+                            
+                        <input type="radio" id="op2c" name="opContainer" value="flex">
+                        <label for="op2c">Flex</label>
+                            
+                        <input type="radio" id="op3c" name="opContainer" value="block" checked>
+                        <label for="op3c">Block</label>
+
+                        <input type="radio" id="op4c" name="opContainer" value="flexbox">
+                        <label for="op4c">Flexbox</label>
+
+                        <input type="radio" id="op5c" name="opContainer" value="inline-block">
+                        <label for="op5c">Inline-block</label>
+
+                        <input type="radio" id="op6c" name="opContainer" value="grid">
+                        <label for="op6c">Grid</label>
+
+                        <button onclick="aplicarDisplayDivContainer()"><span>Aplicar selecionado</span></button>
+                        <button onclick="restaurarPadraoDivContainer()"><span>Restaurar padrão</span></button>
+                    </fieldset>
+
+                    <fieldset class="fs">
+                        <legend>Div Interna</legend>
+
+                        <input type="radio" id="op1i" name="opInner" value="inline">
+                        <label for="op1i">Inline</label>
+                            
+                        <input type="radio" id="op2i" name="opInner" value="flex">
+                        <label for="op2i">Flex</label>
+                            
+                        <input type="radio" id="op3i" name="opInner" value="block" checked>
+                        <label for="op3i">Block</label>
+
+                        <input type="radio" id="op4i" name="opInner" value="flexbox">
+                        <label for="op4i">Flexbox</label>
+
+                        <input type="radio" id="op5i" name="opInner" value="inline-block">
+                        <label for="op5i">Inline-block</label>
+
+                        <input type="radio" id="op6i" name="opInner" value="grid">
+                        <label for="op6i">Grid</label>
+
+                        <button onclick="aplicarDisplayDivInner()"><span>Aplicar selecionado</span></button>
+                        <button onclick="restaurarPadraoDivInner()"><span>Restaurar padrão</span></button>
+                    </fieldset>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer  -->
+        <footer>
+            <p>Desenvolvido por <a href="https://hub.agenciam2a.com.br/?utm_source=ProjetoVisualizacaoDivs" target="_blank">Jota / José Guilherme Pandolfi</a></p>
+        </footer>
+    </div>
+    <!-- Scripts JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
